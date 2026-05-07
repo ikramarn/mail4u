@@ -114,6 +114,11 @@ pipeline {
 
                         echo "Sync complete."
 
+                        # Touch all PHP files to update mtime → forces OPcache invalidation
+                        ssh -i "\$SSH_KEY" -p "${HOSTINGER_PORT}" -o StrictHostKeyChecking=no \\
+                            "${HOSTINGER_USER}@${HOSTINGER_HOST}" \\
+                            "find \${DEST_DIR} -name '*.php' -exec touch {} +"
+
                         # Reset PHP OPcache so new files are picked up immediately
                         ssh -i "\$SSH_KEY" -p "${HOSTINGER_PORT}" -o StrictHostKeyChecking=no \\
                             "${HOSTINGER_USER}@${HOSTINGER_HOST}" \\
