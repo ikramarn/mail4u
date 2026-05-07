@@ -21,13 +21,9 @@ pipeline {
     environment {
         GITHUB_REPO     = 'https://github.com/ikramarn/mail4u.git'
         PLUGIN_SLUG     = 'mail4u'
-        HOSTINGER_HOST  = credentials('hostinger-host')      // store host as secret text
-        HOSTINGER_USER  = credentials('hostinger-ssh-user')  // store username as secret text
-        // Absolute path to wp-content/plugins on Hostinger.
-        // Find it by SSH-ing in and running:
-        //   find /home -name "wp-config.php" 2>/dev/null
-        // Then append /wp-content/plugins
-        WP_PLUGINS_PATH = '/home/u123456789/public_html/wp-content/plugins'
+        HOSTINGER_HOST  = 'srv710.hostinger.com'
+        HOSTINGER_USER  = 'e257ae5506deaaa4'
+        WP_PLUGINS_PATH = '/home/e257ae5506deaaa4/public_html/wp-content/plugins'
     }
 
     // ── Global options ────────────────────────────────────────────────────────
