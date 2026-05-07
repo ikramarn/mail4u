@@ -117,7 +117,7 @@ pipeline {
                         # Reset PHP OPcache so new files are picked up immediately
                         ssh -i "\$SSH_KEY" -p "${HOSTINGER_PORT}" -o StrictHostKeyChecking=no \\
                             "${HOSTINGER_USER}@${HOSTINGER_HOST}" \\
-                            "php -r 'if(function_exists(\"opcache_reset\")){opcache_reset();echo \"OPcache cleared.\n\";}else{echo \"OPcache not available.\n\";}'"
+                            "printf '<?php opcache_reset();' > /tmp/m4u_reset.php && php /tmp/m4u_reset.php && rm /tmp/m4u_reset.php && echo OPcache cleared"
 
                         echo "OPcache reset attempted."
                     """
