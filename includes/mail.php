@@ -11,7 +11,7 @@ function mail4u_send_welcome( $user_id ) {
     $to      = $user->user_email;
     $subject = 'Welcome to Mail4U';
     $body    = sprintf(
-        "Hi %s,\n\nWelcome to Mail4U! Your account is ready.\n\nHead to your dashboard to launch your first outreach campaign:\n%s\n\n— The Mail4U Team",
+        "Hi %s,\n\nWelcome to Mail4U! Your account is ready.\n\nHead to your dashboard to launch your first direct mail campaign:\n%s\n\n\u2014 The Mail4U Team",
         $user->display_name,
         home_url( '/mail4u-dashboard' )
     );
@@ -55,7 +55,7 @@ function mail4u_send_campaign_confirmation( $user_id, $campaign_id ) {
     $to      = $user->user_email;
     $subject = 'Campaign #' . absint( $campaign_id ) . ' Received — Mail4U';
     $body    = sprintf(
-        "Hi %s,\n\nYour outreach campaign (#%d) has been received and is now in the queue.\n\nWe will notify you once it goes live.\n\n— The Mail4U Team",
+        "Hi %s,\n\nYour mailing campaign (#%d) has been received and is now in the print queue.\n\nWe will notify you once your mail pieces have been dispatched.\n\n\u2014 The Mail4U Team",
         $user->display_name,
         absint( $campaign_id )
     );

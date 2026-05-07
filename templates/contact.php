@@ -4,7 +4,7 @@
 
     <div class="m4u-contact__header">
         <h1>Contact Us</h1>
-        <p>Have a question, need help with a campaign, or want to discuss an enterprise plan? We'd love to hear from you.</p>
+        <p>Have a question, need help with a mailing campaign, or want to discuss an enterprise plan? We’d love to hear from you.</p>
     </div>
 
     <div class="m4u-contact__grid">
@@ -22,10 +22,10 @@
             <div class="m4u-contact__info-block">
                 <h3>How Can We Help?</h3>
                 <ul>
-                    <li>Campaign setup and strategy</li>
+                    <li>Mailing campaign setup and strategy</li>
                     <li>Billing and payment questions</li>
-                    <li>Technical issues</li>
-                    <li>Custom enterprise plans</li>
+                    <li>Print quality or dispatch issues</li>
+                    <li>Custom enterprise postal plans</li>
                     <li>Partnership enquiries</li>
                 </ul>
             </div>

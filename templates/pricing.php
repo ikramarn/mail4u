@@ -4,7 +4,7 @@
 
     <section class="m4u-pricing-hero">
         <h1>Simple, Transparent Pricing</h1>
-        <p>All plans include a fully managed outreach campaign service. Upgrade or cancel anytime.</p>
+        <p>All plans include a fully managed print-and-post campaign service. Upgrade or cancel anytime.</p>
     </section>
 
     <?php if ( ! empty( $notice ) ) echo $notice; ?>
@@ -19,11 +19,11 @@
                 <p class="m4u-plan__tagline">Perfect for freelancers and solo operators.</p>
             </div>
             <ul class="m4u-plan__features">
-                <li class="yes">500 outreach emails / month</li>
+                <li class="yes">500 mail pieces / month</li>
                 <li class="yes">Up to 5 active campaigns</li>
-                <li class="yes">Standard delivery (48 hrs)</li>
+                <li class="yes">Standard dispatch (48 hrs)</li>
                 <li class="yes">Email support</li>
-                <li class="no">Priority delivery</li>
+                <li class="no">Priority dispatch</li>
                 <li class="no">Dedicated account manager</li>
             </ul>
             <form method="post">
@@ -44,9 +44,9 @@
                 <p class="m4u-plan__tagline">For growing teams and agencies.</p>
             </div>
             <ul class="m4u-plan__features">
-                <li class="yes">2,000 outreach emails / month</li>
+                <li class="yes">2,000 mail pieces / month</li>
                 <li class="yes">Up to 20 active campaigns</li>
-                <li class="yes">Priority delivery (24 hrs)</li>
+                <li class="yes">Priority dispatch (24 hrs)</li>
                 <li class="yes">Email &amp; chat support</li>
                 <li class="yes">Campaign analytics</li>
                 <li class="no">Dedicated account manager</li>
@@ -68,9 +68,9 @@
                 <p class="m4u-plan__tagline">Unlimited volume for established businesses.</p>
             </div>
             <ul class="m4u-plan__features">
-                <li class="yes">Unlimited outreach emails</li>
+                <li class="yes">Unlimited mail pieces</li>
                 <li class="yes">Unlimited campaigns</li>
-                <li class="yes">Same-day delivery</li>
+                <li class="yes">Same-day dispatch</li>
                 <li class="yes">Priority 24 / 7 support</li>
                 <li class="yes">Full campaign analytics</li>
                 <li class="yes">Dedicated account manager</li>
@@ -88,7 +88,7 @@
 
     <!-- Free tier note -->
     <div class="m4u-pricing-free">
-        <p>Not ready to commit? <a href="<?php echo esc_url( home_url( '/mail4u-register' ) ); ?>">Create a free account</a> and get <strong>10 outreach emails</strong> to test the platform — no card required.</p>
+        <p>Not ready to commit? <a href="<?php echo esc_url( home_url( '/mail4u-register' ) ); ?>">Create a free account</a> and get <strong>10 free mail pieces</strong> to test the platform &mdash; no card required.</p>
     </div>
 
     <!-- FAQ -->
@@ -96,12 +96,12 @@
         <h2 class="m4u-section-title">Frequently Asked Questions</h2>
         <div class="m4u-faq__grid">
             <div class="m4u-faq__item">
-                <h4>Do you write the email for me?</h4>
-                <p>You provide the message template, we handle personalisation, targeting, and delivery. You keep full control of your brand voice.</p>
+                <h4>Do you write and print the letter for me?</h4>
+                <p>You provide the message content, we handle design, personalisation, printing, addressing, and posting. You keep full control of your brand voice.</p>
             </div>
             <div class="m4u-faq__item">
-                <h4>How quickly do campaigns go live?</h4>
-                <p>Standard plans go live within 48 hours. Pro plans within 24 hours. Enterprise campaigns launch the same day.</p>
+                <h4>How quickly are letters dispatched?</h4>
+                <p>Standard plans dispatch within 48 hours. Pro plans within 24 hours. Enterprise campaigns are dispatched the same day.</p>
             </div>
             <div class="m4u-faq__item">
                 <h4>Can I cancel anytime?</h4>

@@ -5,11 +5,11 @@
     <!-- Hero -->
     <section class="m4u-hero">
         <div class="m4u-hero__inner">
-            <span class="m4u-hero__eyebrow">B2B Email Outreach, Done For You</span>
-            <h1 class="m4u-hero__title">Turn New Businesses Into<br><span>Your Next Clients</span></h1>
+            <span class="m4u-hero__eyebrow">B2B Direct Mail, Done For You</span>
+            <h1 class="m4u-hero__title">Reach New Businesses With<br><span>Real Physical Mail</span></h1>
             <p class="m4u-hero__sub">
-                Mail4U researches newly launched businesses in your target market and sends
-                personalised outreach emails on your behalf — so you spend time closing, not prospecting.
+                Mail4U finds newly launched businesses in your target market and sends
+                personalised printed letters or postcards on your behalf — so you spend time closing, not prospecting.
             </p>
             <div class="m4u-hero__actions">
                 <a href="<?php echo esc_url( home_url( '/mail4u-register' ) ); ?>" class="m4u-btn m4u-btn--primary m4u-btn--lg">Get Started Free</a>
@@ -17,7 +17,7 @@
             </div>
             <p class="m4u-hero__note">
                 <span>Free plan available</span>
-                <span>No credit card required</span>
+                <span>Printed &amp; posted for you</span>
                 <span>Cancel anytime</span>
             </p>
             <div class="m4u-hero__preview">
@@ -61,7 +61,7 @@
 
     <!-- Scrolling trust marquee -->
     <div class="m4u-bar">
-        <span style="flex-shrink:0;color:#475569;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap">Trusted across</span>
+        <span style="flex-shrink:0;color:#475569;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap">Mailing for</span>
         <div class="m4u-marquee-wrap">
             <div class="m4u-marquee-track">
                 <span class="m4u-marquee-item">SaaS</span>
@@ -93,37 +93,37 @@
     <section class="m4u-features">
         <div class="m4u-section-head"><span class="m4u-eyebrow">Platform Features</span></div>
         <h2 class="m4u-section-title">Everything You Need to Win New Business</h2>
-        <p class="m4u-section-sub">One platform. Zero cold-calling. Consistent pipeline.</p>
+        <p class="m4u-section-sub">One platform. Printed. Posted. Delivered.</p>
         <div class="m4u-features__grid">
             <div class="m4u-feature">
-                <div class="m4u-feature__icon">&#128236;</div>
-                <h3>Laser-Targeted Outreach</h3>
-                <p>We identify newly launched businesses in your chosen industry and deliver your pitch straight to their inbox at the perfect moment.</p>
+                <div class="m4u-feature__icon">&#128139;</div>
+                <h3>Laser-Targeted Mailing Lists</h3>
+                <p>We identify newly registered businesses in your chosen industry and post your letter or postcard to their front door at exactly the right moment.</p>
             </div>
             <div class="m4u-feature">
                 <div class="m4u-feature__icon">&#9889;</div>
-                <h3>24-Hour Turnaround</h3>
-                <p>Submit a campaign today, go live tomorrow. You write the message once — we handle the delivery, targeting, and timing.</p>
+                <h3>Print &amp; Post in 48 Hours</h3>
+                <p>Submit a campaign today and your mail pieces are printed, addressed, and dispatched within 48 hours. You write the message — we handle the rest.</p>
             </div>
             <div class="m4u-feature">
                 <div class="m4u-feature__icon">&#128202;</div>
                 <h3>Live Campaign Dashboard</h3>
-                <p>Track every campaign from one clean dashboard. See status updates in real time and manage multiple outreach streams at once.</p>
+                <p>Track every mailing campaign from one clean dashboard. See print status, dispatch dates, and estimated delivery windows in real time.</p>
             </div>
             <div class="m4u-feature">
                 <div class="m4u-feature__icon">&#128274;</div>
                 <h3>Secure by Design</h3>
-                <p>Your campaigns and contact data are encrypted end-to-end. Payments are processed securely through Stripe — we never store card details.</p>
+                <p>Your campaign data and recipient addresses are handled with strict confidentiality. Payments are processed securely through Stripe — we never store card details.</p>
             </div>
             <div class="m4u-feature">
                 <div class="m4u-feature__icon">&#127919;</div>
-                <h3>Industry Precision</h3>
-                <p>Target by industry, location, or deal type. Whether you sell web design, accounting, or logistics — we reach the right audience.</p>
+                <h3>Industry &amp; Location Precision</h3>
+                <p>Target by industry, postcode, or region. Whether you serve restaurants, solicitors, or start-ups — your mail lands in the right hands.</p>
             </div>
             <div class="m4u-feature">
                 <div class="m4u-feature__icon">&#128233;</div>
-                <h3>Replies Go Straight to You</h3>
-                <p>Interested businesses reply directly to your email address. No middleman, no delays — just warm leads landing in your inbox.</p>
+                <h3>Responses Come Directly to You</h3>
+                <p>Your contact details are printed on every piece. Interested businesses call or write back directly — no middleman, no delays, just warm leads.</p>
             </div>
         </div>
     </section>
@@ -132,7 +132,7 @@
     <section class="m4u-steps">
         <div class="m4u-section-head"><span class="m4u-eyebrow">How It Works</span></div>
         <h2 class="m4u-section-title">From Sign-Up to Warm Leads in 4 Steps</h2>
-        <p class="m4u-section-sub">Up and running in under 5 minutes.</p>
+        <p class="m4u-section-sub">Your first campaign dispatched in under 5 minutes.</p>
         <div class="m4u-steps__list">
             <div class="m4u-step">
                 <div class="m4u-step__card">
@@ -145,21 +145,21 @@
                 <div class="m4u-step__card">
                     <span class="m4u-step__num">2</span>
                     <h3>Choose Your Plan</h3>
-                    <p>Pick the outreach volume that matches your growth targets.</p>
+                    <p>Pick the mailing volume that matches your growth targets.</p>
                 </div>
             </div>
             <div class="m4u-step">
                 <div class="m4u-step__card">
                     <span class="m4u-step__num">3</span>
-                    <h3>Submit a Campaign</h3>
-                    <p>Tell us your target industry, deal type, and the message to send. We take it from there.</p>
+                    <h3>Submit a Mailing Campaign</h3>
+                    <p>Tell us your target industry, location, and the letter or postcard message to send. We print, address, and post it for you.</p>
                 </div>
             </div>
             <div class="m4u-step">
                 <div class="m4u-step__card">
                     <span class="m4u-step__num">4</span>
                     <h3>Receive Warm Leads</h3>
-                    <p>Interested businesses reply directly to you. You focus purely on closing the deal.</p>
+                    <p>Interested businesses call or write back directly to you. You focus purely on closing the deal.</p>
                 </div>
             </div>
         </div>
@@ -169,19 +169,19 @@
     <section class="m4u-stats">
         <div class="m4u-stats__inner">
             <div class="m4u-stat">
-                <span class="m4u-stat__num">2,400<span>+</span></span>
-                <span class="m4u-stat__label">Campaigns Launched</span>
+                <span class="m4u-stat__num">3,100<span>+</span></span>
+                <span class="m4u-stat__label">Campaigns Dispatched</span>
             </div>
             <div class="m4u-stat">
-                <span class="m4u-stat__num">180K<span>+</span></span>
-                <span class="m4u-stat__label">Emails Delivered</span>
+                <span class="m4u-stat__num">240K<span>+</span></span>
+                <span class="m4u-stat__label">Mail Pieces Posted</span>
             </div>
             <div class="m4u-stat">
-                <span class="m4u-stat__num">850<span>+</span></span>
+                <span class="m4u-stat__num">920<span>+</span></span>
                 <span class="m4u-stat__label">Businesses Served</span>
             </div>
             <div class="m4u-stat">
-                <span class="m4u-stat__num">4.8<span>★</span></span>
+                <span class="m4u-stat__num">4.9<span>★</span></span>
                 <span class="m4u-stat__label">Average Rating</span>
             </div>
         </div>
@@ -195,7 +195,7 @@
         <div class="m4u-testimonials__grid">
             <div class="m4u-testimonial">
                 <div class="m4u-testimonial__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <p class="m4u-testimonial__body">"Within two weeks of launching my first campaign, I had 11 warm replies from newly opened restaurants looking for a web designer. Mail4U is now my main source of new clients."</p>
+                <p class="m4u-testimonial__body">"Within two weeks of my first mailing, I had 9 businesses call me back looking for a web designer. A physical letter stands out in a way no email ever could. Mail4U is now my main source of new clients."</p>
                 <div class="m4u-testimonial__author">
                     <div class="m4u-testimonial__avatar">JM</div>
                     <div>
@@ -206,7 +206,7 @@
             </div>
             <div class="m4u-testimonial">
                 <div class="m4u-testimonial__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <p class="m4u-testimonial__body">"We run outreach for three different service lines from one dashboard. The targeting is surprisingly precise — we only hear from businesses that are actually a fit."</p>
+                <p class="m4u-testimonial__body">"We run postal campaigns for three different service lines from one dashboard. The targeting by postcode and industry is incredibly precise — we only hear from businesses that are actually a fit."</p>
                 <div class="m4u-testimonial__author">
                     <div class="m4u-testimonial__avatar">SR</div>
                     <div>
@@ -217,7 +217,7 @@
             </div>
             <div class="m4u-testimonial">
                 <div class="m4u-testimonial__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                <p class="m4u-testimonial__body">"I was sceptical about cold outreach, but Mail4U reaches businesses right when they open — when they actually need services like mine. My close rate doubled in the first month."</p>
+                <p class="m4u-testimonial__body">"I was sceptical about direct mail, but Mail4U posts letters right when businesses register — when they actually need services like mine. My response rate tripled compared to cold calling."</p>
                 <div class="m4u-testimonial__author">
                     <div class="m4u-testimonial__avatar">DK</div>
                     <div>
@@ -233,7 +233,7 @@
     <section class="m4u-cta">
         <div class="m4u-cta__inner">
             <h2>Ready to Fill Your Pipeline?</h2>
-            <p>Join hundreds of businesses already using Mail4U to land new clients every week.</p>
+            <p>Join hundreds of businesses already using Mail4U to land new clients with physical mail every week.</p>
             <div class="m4u-cta__actions">
                 <a href="<?php echo esc_url( home_url( '/mail4u-register' ) ); ?>" class="m4u-btn m4u-btn--white m4u-btn--lg">Start for Free Today</a>
                 <a href="<?php echo esc_url( home_url( '/mail4u-pricing' ) ); ?>" class="m4u-btn m4u-btn--outline m4u-btn--lg" style="border-color:rgba(255,255,255,.5);color:#fff;">See Pricing</a>

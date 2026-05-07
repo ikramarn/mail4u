@@ -54,14 +54,14 @@
                 <p class="m4u-form__hint">Tip: keep it concise, personalised, and focused on value. 3–5 sentences works best.</p>
             </div>
             <button type="submit" name="mail4u_campaign" class="m4u-btn m4u-btn--primary">
-                Submit Campaign
+                Submit Mailing Campaign
             </button>
         </form>
     </section>
 
     <!-- Campaign history -->
     <section class="m4u-card">
-        <h2>Your Campaigns</h2>
+        <h2>Your Mailing Campaigns</h2>
         <?php if ( empty( $campaigns ) ) : ?>
             <p class="m4u-empty">No campaigns yet. Submit your first one above to start generating leads.</p>
         <?php else : ?>
@@ -71,7 +71,7 @@
                         <tr>
                             <th>#</th>
                             <th>Industry</th>
-                            <th>Deal Type</th>
+                            <th>Service / Offer</th>
                             <th>Status</th>
                             <th>Submitted</th>
                         </tr>
