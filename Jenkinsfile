@@ -22,6 +22,7 @@ pipeline {
         GITHUB_REPO     = 'https://github.com/ikramarn/mail4u.git'
         PLUGIN_SLUG     = 'mail4u'
         HOSTINGER_HOST  = '31.170.164.208'
+        HOSTINGER_PORT  = '65002'
         HOSTINGER_USER  = 'e257ae5506deaaa4'
         WP_PLUGINS_PATH = '/home/e257ae5506deaaa4/public_html/wp-content/plugins'
     }
@@ -96,7 +97,7 @@ pipeline {
                         echo "Target: ${HOSTINGER_USER}@${HOSTINGER_HOST}:\${DEST_DIR}"
 
                         # Ensure remote plugin directory exists
-                        ssh -i "\$SSH_KEY" -o StrictHostKeyChecking=no \\
+                        ssh -i "\$SSH_KEY" -p "${HOSTINGER_PORT}" -o StrictHostKeyChecking=no \\
                             "${HOSTINGER_USER}@${HOSTINGER_HOST}" \\
                             "mkdir -p \${DEST_DIR}"
 
@@ -107,7 +108,7 @@ pipeline {
                             --exclude='Jenkinsfile' \\
                             --exclude='commit-all.sh' \\
                             --exclude='README.md' \\
-                            -e "ssh -i \$SSH_KEY -o StrictHostKeyChecking=no" \\
+                            -e "ssh -i \$SSH_KEY -p ${HOSTINGER_PORT} -o StrictHostKeyChecking=no" \\
                             ./ \\
                             "${HOSTINGER_USER}@${HOSTINGER_HOST}:\${DEST_DIR}/"
 
@@ -126,7 +127,7 @@ pipeline {
                     keyFileVariable: 'SSH_KEY'
                 )]) {
                     sh """
-                        ssh -i "\$SSH_KEY" -o StrictHostKeyChecking=no \\
+                        ssh -i "\$SSH_KEY" -p "${HOSTINGER_PORT}" -o StrictHostKeyChecking=no \\
                             "${HOSTINGER_USER}@${HOSTINGER_HOST}" \\
                             "ls -la ${WP_PLUGINS_PATH}/${PLUGIN_SLUG}/mail4u.php"
                         echo "Plugin main file confirmed on server."
