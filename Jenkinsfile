@@ -113,6 +113,13 @@ pipeline {
                             "${HOSTINGER_USER}@${HOSTINGER_HOST}:\${DEST_DIR}/"
 
                         echo "Sync complete."
+
+                        # Reset PHP OPcache so new files are picked up immediately
+                        ssh -i "\$SSH_KEY" -p "${HOSTINGER_PORT}" -o StrictHostKeyChecking=no \\
+                            "${HOSTINGER_USER}@${HOSTINGER_HOST}" \\
+                            "php -r 'if(function_exists(\"opcache_reset\")){opcache_reset();echo \"OPcache cleared.\n\";}else{echo \"OPcache not available.\n\";}'"
+
+                        echo "OPcache reset attempted."
                     """
                 }
             }
