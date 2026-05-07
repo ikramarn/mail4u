@@ -4,11 +4,11 @@
 //
 // Required Jenkins plugins:
 //   • Pipeline (built-in)
-//   • SSH Agent Plugin
+//   • Credentials Binding Plugin (for withCredentials / sshUserPrivateKey)
 //   • Git Plugin
 //
 // Required Jenkins credentials (Manage Jenkins → Credentials):
-//   • ID: github-token      → Username/Password  (GitHub PAT or SSH key)
+//   • ID: github-token      → Username/Password  (GitHub PAT)
 //   • ID: hostinger-ssh-key → SSH Username with private key
 //                             Username = your Hostinger SSH username
 // =============================================================================
@@ -84,17 +84,20 @@ pipeline {
         stage('Deploy to Hostinger') {
             steps {
                 echo "Deploying plugin to Hostinger ..."
-                sshagent(credentials: ['hostinger-ssh-key']) {
+                withCredentials([sshUserPrivateKey(
+                    credentialsId : 'hostinger-ssh-key',
+                    keyFileVariable: 'SSH_KEY'
+                )]) {
                     sh """
                         set -e
 
                         DEST_DIR="${WP_PLUGINS_PATH}/${PLUGIN_SLUG}"
 
-                        echo "Target: \${HOSTINGER_USER}@\${HOSTINGER_HOST}:\${DEST_DIR}"
+                        echo "Target: ${HOSTINGER_USER}@${HOSTINGER_HOST}:\${DEST_DIR}"
 
                         # Ensure remote plugin directory exists
-                        ssh -o StrictHostKeyChecking=no \\
-                            "\${HOSTINGER_USER}@\${HOSTINGER_HOST}" \\
+                        ssh -i "\$SSH_KEY" -o StrictHostKeyChecking=no \\
+                            "${HOSTINGER_USER}@${HOSTINGER_HOST}" \\
                             "mkdir -p \${DEST_DIR}"
 
                         # Sync all plugin files; --delete removes files no longer in repo
@@ -104,9 +107,9 @@ pipeline {
                             --exclude='Jenkinsfile' \\
                             --exclude='commit-all.sh' \\
                             --exclude='README.md' \\
-                            -e "ssh -o StrictHostKeyChecking=no" \\
+                            -e "ssh -i \$SSH_KEY -o StrictHostKeyChecking=no" \\
                             ./ \\
-                            "\${HOSTINGER_USER}@\${HOSTINGER_HOST}:\${DEST_DIR}/"
+                            "${HOSTINGER_USER}@${HOSTINGER_HOST}:\${DEST_DIR}/"
 
                         echo "Sync complete."
                     """
@@ -118,10 +121,13 @@ pipeline {
         stage('Verify Plugin Active') {
             steps {
                 echo "Verifying plugin is recognised by WordPress ..."
-                sshagent(credentials: ['hostinger-ssh-key']) {
+                withCredentials([sshUserPrivateKey(
+                    credentialsId : 'hostinger-ssh-key',
+                    keyFileVariable: 'SSH_KEY'
+                )]) {
                     sh """
-                        ssh -o StrictHostKeyChecking=no \\
-                            "\${HOSTINGER_USER}@\${HOSTINGER_HOST}" \\
+                        ssh -i "\$SSH_KEY" -o StrictHostKeyChecking=no \\
+                            "${HOSTINGER_USER}@${HOSTINGER_HOST}" \\
                             "ls -la ${WP_PLUGINS_PATH}/${PLUGIN_SLUG}/mail4u.php"
                         echo "Plugin main file confirmed on server."
                     """
