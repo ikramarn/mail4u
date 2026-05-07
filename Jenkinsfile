@@ -24,7 +24,7 @@ pipeline {
         HOSTINGER_HOST  = '31.170.164.208'
         HOSTINGER_PORT  = '65002'
         HOSTINGER_USER  = 'u496327464'
-        WP_PLUGINS_PATH = '/home/u496327464/public_html/wp-content/plugins'
+        WP_PLUGINS_PATH = '/home/u496327464/domains/darkred-jellyfish-898544.hostingersite.com/public_html/wp-content/plugins'
     }
 
     // ── Global options ────────────────────────────────────────────────────────
