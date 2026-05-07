@@ -9,7 +9,7 @@
 //
 // Required Jenkins credentials (Manage Jenkins → Credentials):
 //   • ID: github-token      → Username/Password  (GitHub PAT)
-//   • ID: hostinger-ssh-key → SSH Username with private key
+//   • ID: jenkins-hostinger → SSH Username with private key
 //                             Username = your Hostinger SSH username
 // =============================================================================
 
@@ -85,7 +85,7 @@ pipeline {
             steps {
                 echo "Deploying plugin to Hostinger ..."
                 withCredentials([sshUserPrivateKey(
-                    credentialsId : 'hostinger-ssh-key',
+                    credentialsId : 'jenkins-hostinger',
                     keyFileVariable: 'SSH_KEY'
                 )]) {
                     sh """
@@ -122,7 +122,7 @@ pipeline {
             steps {
                 echo "Verifying plugin is recognised by WordPress ..."
                 withCredentials([sshUserPrivateKey(
-                    credentialsId : 'hostinger-ssh-key',
+                    credentialsId : 'jenkins-hostinger',
                     keyFileVariable: 'SSH_KEY'
                 )]) {
                     sh """
