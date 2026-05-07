@@ -25,12 +25,12 @@
 
     <!-- New campaign form -->
     <section class="m4u-card">
-        <h2>Launch a New Campaign</h2>
+        <h2>Launch a New Mailing Campaign</h2>
         <?php if ( $plan === 'free' ) : ?>
             <p class="m4u-notice m4u-info">
-                Your free plan includes <strong>10 outreach emails</strong>.
+                Your free plan includes <strong>10 mail pieces</strong>.
                 <a href="<?php echo esc_url( home_url( '/mail4u-pricing' ) ); ?>">Upgrade</a>
-                for higher volume and priority delivery.
+                for higher volume and priority dispatch.
             </p>
         <?php endif; ?>
         <form method="post" class="m4u-form">
@@ -39,19 +39,19 @@
                 <div class="m4u-form__group">
                     <label for="industry">Target Industry</label>
                     <input type="text" id="industry" name="industry" required
-                           placeholder="e.g. SaaS, Restaurant, E-commerce" />
+                           placeholder="e.g. Restaurant, Solicitor, E-commerce" />
                 </div>
                 <div class="m4u-form__group">
-                    <label for="deal_type">Deal / Service Type</label>
+                    <label for="deal_type">Your Service / Offer</label>
                     <input type="text" id="deal_type" name="deal_type" required
-                           placeholder="e.g. Web Design, Accounting, Legal" />
+                           placeholder="e.g. Web Design, Accounting, Signage" />
                 </div>
             </div>
             <div class="m4u-form__group">
-                <label for="message">Outreach Message Template</label>
+                <label for="message">Letter / Postcard Message</label>
                 <textarea id="message" name="message" rows="7" required
-                    placeholder="Write the email body to send on your behalf. Use [Business Name] as a dynamic placeholder for the recipient's company name."></textarea>
-                <p class="m4u-form__hint">Tip: keep it concise, personalised, and focused on value. 3–5 sentences works best.</p>
+                    placeholder="Write the message to print on your mail piece. Use [Business Name] as a dynamic placeholder for the recipient&apos;s company name."></textarea>
+                <p class="m4u-form__hint">Tip: keep it concise and focused on one clear offer. 3&ndash;5 sentences works best for direct mail.</p>
             </div>
             <button type="submit" name="mail4u_campaign" class="m4u-btn m4u-btn--primary">
                 Submit Mailing Campaign

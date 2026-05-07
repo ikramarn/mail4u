@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Mail4U
  * Plugin URI:        https://mail4u.example.com
- * Description:       B2B Mail Outreach SaaS — sends cold outreach emails to newly launched businesses on behalf of your customers.
+ * Description:       B2B Direct Mail SaaS — prints and posts personalised letters or postcards to newly launched businesses on behalf of your customers.
  * Version:           1.0.0
  * Requires at least: 5.8
  * Requires PHP:      7.4
