@@ -49,6 +49,46 @@
 .m4u-wrap img { max-width: 100%; }
 
 /* --------------------------------------------------------------------------
+   Header Navigation — bold, prominent menu items (Astra theme)
+   -------------------------------------------------------------------------- */
+.main-header-bar .main-navigation .menu-item > a,
+.main-header-bar .main-navigation .menu-item > .menu-link,
+.ast-header-wrap .main-navigation .menu-item > a,
+.site-header .main-navigation ul li a,
+.ast-header-navigation ul.menu > li > a,
+#site-navigation ul.menu > li > a {
+    font-weight: 700 !important;
+    font-size: 15px !important;
+    letter-spacing: 0.3px !important;
+    color: #0F172A !important;
+    text-transform: none !important;
+    transition: color 0.2s ease !important;
+}
+
+.main-header-bar .main-navigation .menu-item > a:hover,
+.ast-header-wrap .main-navigation .menu-item > a:hover,
+.site-header .main-navigation ul li a:hover,
+#site-navigation ul.menu > li > a:hover {
+    color: #2563EB !important;
+}
+
+/* Highlight "Get Started" nav item as a button */
+.main-navigation .menu-item a[href*="mail4u-register"],
+#site-navigation .menu-item a[href*="mail4u-register"] {
+    background: #2563EB !important;
+    color: #ffffff !important;
+    padding: 8px 18px !important;
+    border-radius: 8px !important;
+    font-weight: 700 !important;
+}
+
+.main-navigation .menu-item a[href*="mail4u-register"]:hover,
+#site-navigation .menu-item a[href*="mail4u-register"]:hover {
+    background: #1D4ED8 !important;
+    color: #ffffff !important;
+}
+
+/* --------------------------------------------------------------------------
    3. Buttons
    -------------------------------------------------------------------------- */
 .m4u-btn {
