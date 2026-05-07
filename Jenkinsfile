@@ -23,8 +23,8 @@ pipeline {
         PLUGIN_SLUG     = 'mail4u'
         HOSTINGER_HOST  = '31.170.164.208'
         HOSTINGER_PORT  = '65002'
-        HOSTINGER_USER  = 'e257ae5506deaaa4'
-        WP_PLUGINS_PATH = '/home/e257ae5506deaaa4/public_html/wp-content/plugins'
+        HOSTINGER_USER  = 'u496327464'
+        WP_PLUGINS_PATH = '/home/u496327464/public_html/wp-content/plugins'
     }
 
     // ── Global options ────────────────────────────────────────────────────────
