@@ -21,7 +21,7 @@ pipeline {
     environment {
         GITHUB_REPO     = 'https://github.com/ikramarn/mail4u.git'
         PLUGIN_SLUG     = 'mail4u'
-        HOSTINGER_HOST  = 'srv710.hostinger.com'
+        HOSTINGER_HOST  = '31.170.164.208'
         HOSTINGER_USER  = 'e257ae5506deaaa4'
         WP_PLUGINS_PATH = '/home/e257ae5506deaaa4/public_html/wp-content/plugins'
     }
