@@ -20,9 +20,20 @@ git checkout -B "$BRANCH" 2>/dev/null || true
 
 echo ">>> Committing each changed / new file individually ..."
 
-# Collect all files that are modified, added, or untracked
+# Collect all files: modified/staged AND files inside untracked directories
 mapfile -t FILES < <(
-    git status --porcelain | awk '{print $2}'
+    {
+        # Modified or staged files
+        git status --porcelain | grep -v '^??' | awk '{print $2}'
+        # Untracked files (expand directories recursively)
+        git status --porcelain | grep '^??' | awk '{print $2}' | while read -r entry; do
+            if [ -d "$entry" ]; then
+                find "$entry" -type f
+            else
+                echo "$entry"
+            fi
+        done
+    } | sort -u
 )
 
 if [ ${#FILES[@]} -eq 0 ]; then
