@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # =============================================================================
 # commit-all.sh — Stage and commit every tracked/untracked file individually
-# Usage: bash commit-all.sh
+# Usage (Git Bash): bash commit-all.sh
+#         OR (PowerShell): & "C:\Program Files\Git\bin\bash.exe" commit-all.sh
 # =============================================================================
 
 set -euo pipefail
